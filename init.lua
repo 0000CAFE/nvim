@@ -3,6 +3,7 @@
 	2. vim.g 用于设置和获取全局变量，通常与插件或自定义配置相关。
 	3. 如果是窗口或缓冲区相关的选项，则应该分别使用 vim.wo 和 vim.bo，以免混淆。
 --]]
+-- Simple
 
 local set = vim.o
 -- 设置编码
@@ -204,6 +205,7 @@ require("lazy").setup({
 		end,
 	},
 })
+
 -- 启用主题
 vim.cmd.colorscheme("base16-ocean")
 
